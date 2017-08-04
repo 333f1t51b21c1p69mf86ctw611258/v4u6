@@ -5,8 +5,6 @@ import { NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { ProfileService } from '../profiles/profile.service';
 import { Principal, LoginModalService, LoginService } from '../../shared';
 
-import { VERSION, DEBUG_INFO_ENABLED } from '../../app.constants';
-
 @Component({
     selector: 'jhi-navbar',
     templateUrl: './navbar.component.html',
@@ -21,7 +19,6 @@ export class NavbarComponent implements OnInit {
     languages: any[];
     swaggerEnabled: boolean;
     modalRef: NgbModalRef;
-    version: string;
 
     constructor(
         private loginService: LoginService,
@@ -30,7 +27,6 @@ export class NavbarComponent implements OnInit {
         private profileService: ProfileService,
         private router: Router
     ) {
-        this.version = VERSION ? 'v' + VERSION : '';
         this.isNavbarCollapsed = true;
     }
 
