@@ -1,0 +1,25 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "text",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength",
+                "required"
+            ],
+            "fieldValidateRulesMaxlength": 255
+        },
+        {
+            "fieldName": "done",
+            "fieldType": "Boolean"
+        }
+    ],
+    "changelogDate": "20170804090347",
+    "javadoc": "Todo entity.",
+    "entityTableName": "todo",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}
